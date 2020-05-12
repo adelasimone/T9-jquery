@@ -6,23 +6,25 @@
   - Extra: Modifiquem o estilo da página para ela ficar com a sua cara!
 */
 
-$(document).ready(function () {
 
+// ----- RESOLUÇÃO PROF -----
+$(document).ready(function () {
+  
   const bodyColor = $('body')
   bodyColor.css('background', 'yellow')
-
+  
   function changeBg() {
     if(bodyColor[0].style.background == 'yellow') {
       $('body').css('background', '#fff');
       $('h1')
-        .css('color', '#000')
-        .text('Ligado');
+      .css('color', '#000')
+      .text('Ligado');
       $('.imagem').attr('src', "https://media.giphy.com/media/xT9IgKgt9iDoLOQafm/giphy.gif");
     } else {
       $('body').css('background', '#000');
       $('h1')
-        .css('color', '#fff')
-        .text('Desligado');
+      .css('color', '#fff')
+      .text('Desligado');
       $('.imagem').attr('src', "https://media.giphy.com/media/xT9IgKgt9iDoLOQafm/giphy.gif");
     }
   }
@@ -32,6 +34,7 @@ $(document).ready(function () {
   })
 })
 
+// ----- MINHA RESOLUÇÃO PARCIAL -----
 // $('document').ready(function () {
 
 //   $('#botao').click(function () {
