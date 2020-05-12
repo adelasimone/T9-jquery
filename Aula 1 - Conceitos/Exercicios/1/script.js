@@ -1,12 +1,13 @@
 /*
 
-  Biscoito da sorte - Versão JQuery 
+Biscoito da sorte - Versão JQuery 
 
-  Ao clicar no biscoito da sorte, troque o texto do parágrafo para uma frase aleatória que está guardada na nossa array 'frases'
-    
+Ao clicar no biscoito da sorte, troque o texto do parágrafo para uma frase aleatória que está guardada na nossa array 'frases'
+
 */
+$(document).ready(function () {
 
-const frases = [
+  const frases = [
     "A vida trará coisas boas se tiveres paciência.",
     "Demonstre amor e alegria em todas as oportunidades e verás que a paz nasce dentro de você.",
     "Não compense na ira o que lhe falta na razão.",
@@ -21,5 +22,12 @@ const frases = [
     "Siga os bons e aprenda com eles.",
     "Não importa o tamanho da montanha, ela não pode tapar o sol.",
     "O bom-senso vai mais longe do que muito conhecimento.",
-]
+  ];
 
+
+  $('.biscoito').click(function () {
+
+    let sorteando = Math.floor(Math.random() * frases.length);
+    $('#message').text(frases[sorteando]);
+  })
+})

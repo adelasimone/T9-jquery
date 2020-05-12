@@ -5,3 +5,41 @@
   - Você pode criar uma função "changeBg" que será responsável pela lógica dessa alteração
   - Extra: Modifiquem o estilo da página para ela ficar com a sua cara!
 */
+
+$(document).ready(function () {
+
+  const bodyColor = $('body')
+  bodyColor.css('background', 'yellow')
+
+  function changeBg() {
+    if(bodyColor[0].style.background == 'yellow') {
+      $('body').css('background', '#fff');
+      $('h1')
+        .css('color', '#000')
+        .text('Ligado');
+      $('.imagem').attr('src', "https://media.giphy.com/media/xT9IgKgt9iDoLOQafm/giphy.gif");
+    } else {
+      $('body').css('background', '#000');
+      $('h1')
+        .css('color', '#fff')
+        .text('Desligado');
+      $('.imagem').attr('src', "https://media.giphy.com/media/xT9IgKgt9iDoLOQafm/giphy.gif");
+    }
+  }
+  // $('#botao').click(changeBg)
+  $('#botao').click(function () {
+    changeBg()
+  })
+})
+
+// $('document').ready(function () {
+
+//   $('#botao').click(function () {
+
+//     $('body').css('background', '#000')
+//     $('h1')
+//       .text('Desligado')
+//       .css('color', '#fff')
+//     $('.imagem').attr("src", "https://media.giphy.com/media/xT9IgKgt9iDoLOQafm/giphy.gif")
+//   })
+// })
