@@ -6,6 +6,16 @@
   - Extra: Modifiquem o estilo da página para ela ficar com a sua cara!
 */
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+//jquery
+
+$(document).ready(function() {
+=======
+$(document).ready(function () {
+>>>>>>> 812b66b7696b41dc10a40292491639bd1d7de1f7
+>>>>>>> bca86f9e102a02d9d560fee8f1a4c43e786727fd
 
 // ----- RESOLUÇÃO PROF -----
 $(document).ready(function () {
@@ -15,6 +25,35 @@ $(document).ready(function () {
   
   function changeBg() {
     if(bodyColor[0].style.background == 'yellow') {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      $('body').css('background', 'black');
+      $('h1')
+        .css('color', 'white')
+        .text('Desligado')
+      $('.imagem').attr('src', "https://media.giphy.com/media/N4a7e1ftdbQWc/giphy.gif" )
+    } else {
+      $('body').css('background', 'yellow');
+      $('h1')
+        .css('color', 'black')
+        .text('Ligado')
+      $('.imagem').attr('src', "https://media.giphy.com/media/3KVRMtLXfORVosk6TW/giphy.gif" )
+
+    }
+  }
+
+$('#botao').click(function() {
+    changeBg()
+})
+
+//ou
+
+$('#botao').click(changeBg)
+
+})
+=======
+>>>>>>> bca86f9e102a02d9d560fee8f1a4c43e786727fd
       $('body').css('background', '#fff');
       $('h1')
       .css('color', '#000')
@@ -46,3 +85,7 @@ $(document).ready(function () {
 //     $('.imagem').attr("src", "https://media.giphy.com/media/xT9IgKgt9iDoLOQafm/giphy.gif")
 //   })
 // })
+<<<<<<< HEAD
+=======
+>>>>>>> 812b66b7696b41dc10a40292491639bd1d7de1f7
+>>>>>>> bca86f9e102a02d9d560fee8f1a4c43e786727fd

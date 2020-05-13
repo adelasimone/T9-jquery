@@ -27,6 +27,20 @@ $(document).ready(function () {
 
   $('.biscoito').click(function () {
 
+<<<<<<< HEAD
+    let sorteando = Math.floor(Math.random() * frases.length);
+    $('#message').text(frases[sorteando]);
+  })
+=======
+<<<<<<< HEAD
+
+//jQuery
+
+$('.biscoito').click(function() {
+  let indexDaFrase = Math.floor(Math.random() * frases.length)
+  
+  $('#message').text(frases[indexDaFrase])
+=======
     let sorteando = Math.floor(Math.random() * frases.length);
     $('#message').text(frases[sorteando]);
   })
