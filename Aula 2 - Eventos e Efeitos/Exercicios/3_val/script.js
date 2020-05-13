@@ -7,6 +7,20 @@ o elemento <h2> do texto.
 do input deve completar a frase.
 
 2. Não esqueça de validar o input de forma a não replicar valores vazios
-
-
 */
+
+$(document).ready(function () {
+
+    // $('input').keyup(function () {
+    //     $('h2').val()
+    // })
+    let nomes = $('#campo-nome').val()
+
+    $('#botao-replicar').click(function() {
+        // $('body').add('h2')
+
+        $('#texto-replicado')
+        .text(nomes)
+        .css('background-color', 'pink')
+    })
+})
